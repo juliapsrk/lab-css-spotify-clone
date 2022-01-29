@@ -6,3 +6,217 @@ Green: #00B172
 White: #FFF
 
 */
+/*
+{
+	display: flex;
+	flex-direction: row // row-reverse // column // column-reverse
+	flex-wrap: nowrap // wrap // wrap-reverse
+	justify-content: flex-start // flex-end // center // space-around // space-between
+	align-items: stretch // baseline // center // flex-start // flex-end
+	align-content: stretch // center // flex-start // flex-end // space-around // space-between
+}
+*/
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,
+body {
+  font-size: 60%;
+  font-family: 'Roboto';
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.headerContainer {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greenLogo {
+  width: 20em;
+  margin-right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+/* Hero section */
+
+.heroSection {
+  font-family: 'Roboto';
+  color: white;
+  padding: 250px 0;
+  background-image: url('/images/landing.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.heroContainer {
+  color: #fff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContainer h1 {
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.heroContainer h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Section 2: Features */
+
+.features {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 4rem;
+  height: 4px;
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature h4 {
+  text-align: center;
+  font-size: 4em;
+  padding: 10px 0;
+  color: #00b172;
+}
+
+.feature p {
+  text-align: center;
+  font-size: 3em;
+  padding: 15px 25px;
+}
+
+.feature img {
+  height: 100px;
+}
+
+/* Section 3: Yeezy */
+
+.yeezy {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #00b172;
+  background-size: cover;
+  background-position: center center;
+}
+
+.yeezyContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url('/images/spotify-icon-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  background-position: center center;
+}
+
+.left h4 {
+  display: block;
+  margin-top: 4px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  height: 4px;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.function h5 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: white;
+  padding-left: 50px;
+}
+
+.function p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  color: white;
+  padding-left: 50px;
+}
+
+.yeezyPic {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 90%;
+  margin: 50px auto 25px auto;
+}
+
+.yeezyPic img {
+  max-width: 50%;
+  margin-left: auto;
+  object-fit: contain;
+}
